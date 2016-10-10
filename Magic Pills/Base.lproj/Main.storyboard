@@ -120,11 +120,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlg-n1-Kvn">
-                                <frame key="frameInset" minX="74" minY="596.5" width="228" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlg-n1-Kvn">
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="NJR-VE-O5v"/>
                                     <constraint firstAttribute="width" constant="228" id="gae-QM-UE9"/>
                                     <constraint firstAttribute="height" constant="45" id="hdz-tT-br4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="228" id="rvf-H6-0vX"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="buyNowBtn"/>
                                 <connections>
@@ -182,6 +183,7 @@
                             <constraint firstItem="lWh-MS-9g4" firstAttribute="leading" secondItem="aof-as-K4E" secondAttribute="leading" id="4bG-f8-1PI"/>
                             <constraint firstItem="wK6-DJ-lbX" firstAttribute="leading" secondItem="nWt-go-QRw" secondAttribute="leading" id="4eK-eH-pV7"/>
                             <constraint firstItem="FOR-ck-LI1" firstAttribute="leading" secondItem="Q6A-hV-OQy" secondAttribute="leading" id="5yA-Lg-rUZ"/>
+                            <constraint firstItem="nlg-n1-Kvn" firstAttribute="top" secondItem="Car-oi-5ey" secondAttribute="bottom" constant="37.5" id="7og-fY-esI"/>
                             <constraint firstItem="JxB-oT-qZ5" firstAttribute="trailing" secondItem="lWh-MS-9g4" secondAttribute="trailing" id="8Kk-RD-FhM"/>
                             <constraint firstItem="7LB-BB-oJM" firstAttribute="leading" secondItem="jfU-jJ-3F0" secondAttribute="leading" id="91E-nG-HgP"/>
                             <constraint firstItem="Car-oi-5ey" firstAttribute="top" secondItem="wK6-DJ-lbX" secondAttribute="bottom" constant="10" id="CLL-cl-GAG"/>
@@ -218,6 +220,7 @@
                             <constraint firstItem="nlg-n1-Kvn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pP2-5e-iwe"/>
                             <constraint firstItem="nWt-go-QRw" firstAttribute="top" secondItem="bPN-77-kWN" secondAttribute="bottom" constant="10" id="pQd-Qe-8v3"/>
                             <constraint firstItem="wK6-DJ-lbX" firstAttribute="top" secondItem="nWt-go-QRw" secondAttribute="bottom" constant="5" id="qRO-DX-yFg"/>
+                            <constraint firstItem="nlg-n1-Kvn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rzj-hA-8lg"/>
                             <constraint firstItem="d0R-Np-YzB" firstAttribute="centerX" secondItem="vy0-ja-xtP" secondAttribute="centerX" id="sC0-vk-kGW"/>
                             <constraint firstItem="lWh-MS-9g4" firstAttribute="trailing" secondItem="aof-as-K4E" secondAttribute="trailing" id="sCW-0F-Fy4"/>
                             <constraint firstItem="amq-rA-Lgt" firstAttribute="top" secondItem="wK6-DJ-lbX" secondAttribute="bottom" constant="10" id="spN-SK-7Rj"/>
@@ -231,8 +234,12 @@
                     </view>
                     <connections>
                         <outlet property="buyNowBtn" destination="nlg-n1-Kvn" id="L5R-GA-4Bd"/>
+                        <outlet property="countryLabel" destination="amq-rA-Lgt" id="wMI-4b-PNa"/>
+                        <outlet property="countryTextHolder" destination="VWx-Z1-RxC" id="eZr-Ca-thh"/>
                         <outlet property="statePicker" destination="Car-oi-5ey" id="lEj-Ib-rwj"/>
                         <outlet property="statePickerBtn" destination="wK6-DJ-lbX" id="jyC-uG-cip"/>
+                        <outlet property="zipCodeLabel" destination="jfU-jJ-3F0" id="23X-Bd-acT"/>
+                        <outlet property="zipCodeTextHolder" destination="7LB-BB-oJM" id="bcy-7F-bja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
